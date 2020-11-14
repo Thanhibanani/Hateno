@@ -7,7 +7,7 @@
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.3fr 2.4fr 0.2fr;
+    grid-template-rows: 0.8fr 0.7fr 0.3fr;
     gap: 0px 0px;
     grid-template-areas:
       "Header Header Header Header"
@@ -63,6 +63,7 @@
    
     display: block;
     padding: 0px 10px;
+    font-size: 20px;
     color:white;
     border-right: 1px solid #f4f4f4;
     text-decoration: none;
@@ -83,28 +84,43 @@
     padding: 10px 20px;
     text-decoration: none;
   }
-  .header .search-container {
-    float: right;
-  }
-  
-  .header input[type=text] {
-    padding: 10px;
-    margin-top: 20px;
-    font-size: 17px;
-    border: none;
-  }
+/*search*/
+.header  ul .search-icon{
+  margin-left:150px;
+  height:35px;
+  width:240px;
+  display:flex; 
+  background-color: #f2f2f2;
+  border-radius:5px;
+}
 
-  .header .search-container button{
-    float: right;
-    padding: 10px 10px;
-    margin-top: 20px;
-    margin-right: 16px;
-    background: #ddd;
-    font-size: 17px;
-    border: none;
-    cursor: pointer;
-  }
-  
+.header ul .search-icon input{
+  height:100%;
+  width:200px;
+  border:none;
+  outline:none;
+  padding:0 10px;
+  color:#000;
+  font-size:16;
+  border-radius:5px 0 0 5px;
+}
+
+.header ul .search-icon .icon{
+  height:100%;
+  width: 40px;
+  line-height:40px;
+  text-align: center;
+ border:1px solid #cccccc;
+  border-radius: 0 5px 5px 0;
+}
+
+.header ul .search-icon:hover{
+  background:#e6e6e6;
+}
+.header ul .search-icon span{
+  color:#222222;
+  font-size:18px;
+}
   
   /* menu */
   
@@ -200,7 +216,7 @@
     .header .search-container {
       float: none;
     }
-    .header a, .header input[type=text], .header .search-container button {
+    .header a, .header input[type="search"], .header .search-container button {
       float: none;
       display: block;
       text-align: left;
@@ -208,7 +224,7 @@
       margin: 0;
       padding: 14px;
     }
-    .header input[type=text] {
+    .header input[type="search"] {
       border: 1px solid #ccc;  
     }
   }
@@ -216,7 +232,7 @@
 
 /*Here starts content*/
 .product-list {
-    grid-area:content;
+    grid-area:Content;
     background-color: #F0F4EF;
     padding: 3em;
   }
@@ -247,6 +263,7 @@
     margin-left: 2em;
     margin-bottom: 0.5em;
     font-size: 12px;
+    max-height:5px;
   }
   
   .buy-button {
