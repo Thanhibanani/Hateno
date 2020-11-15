@@ -8,6 +8,7 @@
     <title>index</title>
 </head>
 <body>
+    <!--Header starts here-->
     <div class="grid-container">
         <div class="Header">
             <header class="header">
@@ -16,31 +17,25 @@
                 <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
                 <ul class="menu">
                     <div class="items">
-                    <li><a href="#">New Releases</a></li>
-                    <li><a href="#">Men</a></li>
-                    <li><a href="#">Women</a></li>
-                    <li><a href="#">Kids</a></li>
-                    <li><a href="#">Sale</a></li>
-                    <li><a href="#">Help</a></li>
-                    <li><a href="#">Shopping cart</a></li>
+                    <li><a href="#NewReleases">New Releases</a></li>
+                    <li><a href="#coming-soon">Coming soon</a></li>
+                    <li><a href="#help">Help</a></li>
+                    
                 </div>
-                        <li class="search-icon">
-                            <input type="search" placeholder="Search">
-                            <label class="icone">
-                                <span class="fas fa-search"></span>
-                            </label>
-                            
-      
-                        </li>
                     </div>
                 </ul>
             </header>
             </div>
+            <!--Header ends here-->
+    
+        <!--Content starts here-->
         <div class="Content">
             <!--Product grid-->
+            <section id=NewReleases>
             <h1 class="h1-container">
             New Arrivals This Week!</h1>
         </h1>
+
             <div class="row">
               <div class="column">
                 <div class="card">
@@ -88,21 +83,68 @@
                             </div>
                           </div>
                         </div>
+                    </section>
 
-                        <div class="row">
-                            <div class="column">
-                              <div class="card">
-                                <img class="Image" src ="images/shoe5.jpg" alt="Shoe5"  >
-                                <div class="container">
-                                  <h2></h2>
-                                  <p class="title">AIR FORCE 1</p>
-                                  <p><button class="button">Buy Now!</button></p>
-                                </div>
-                              </div>
+<section id="coming-soon">
+    <div class="section2-container">
+<h1 class="h1-container">Coming soon!</h1>
+                 
+                <div class="row">
+                    <div class="column">
+                      <div class="card">
+                        <img class="Image" src ="images/Shoe6.jpg" alt="Shoe3"  >
+                        <div class="container">
+                          <h2></h2>
+                          <p class="title">AIR VAPORMAX 2020 FK UNISEX  </p>
+                          <p><button class="button">Buy Now!</button></p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="column">
+                          <div class="card">
+                            <img class="Image" src ="images/Shoe7.jpg" alt="Shoe4"  >
+                            <div class="container">
+                            
+                              <p class="title">AIR FORCE 1 </p>
+                              <p><button class="button">Buy Now!</button></p>
                             </div>
-            
+                          </div>
+                        </div>
+</section>
 
-              
+<section class="help" id="help">
+<div class="section3-container">
+    <div class="contact">
+        <h3 class="h1-container">Email Us</h3>
+        <form>
+          <p>
+            <label>Name</label>
+            <input type="text" name="name" Placeholder="First name and surname" required>
+          </p>
+          <p>
+            <label>Subject</label>
+            <input type="text" name="company" Placeholder="Write the subject" required>
+          </p>
+          <p>
+            <label>Email Address</label>
+            <input type="email" name="email" Placeholder="Example@mail.com" required>
+          </p>
+          <p>
+            <label>Phone Number</label>
+            <input type="text" name="phone" Placeholder="Phone number" required>
+          </p>
+          <p class="full">
+            <label>Message</label>
+            <textarea name="message" rows="5" placeholder="Write a message" required></textarea>
+          </p>
+          <p class="full">
+            <button>Send</button>
+          </p>
+        </form>
+      </div>
+</div>
 </section>
         </div>
         <div class="Footer">
