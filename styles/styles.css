@@ -327,6 +327,10 @@ section:nth-child(3){
   background-color: #555;
 }
 
+a.send-btn, a.send-btn:hover {
+  text-decoration: none;
+  list-style: none;
+}
 .CardText {
   height: 100px;
 }
