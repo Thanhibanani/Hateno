@@ -365,10 +365,13 @@ section:nth-child(3){
   grid-row-end: 2;
   
   text-decoration: none;
-  list-style: none;
   width:auto;
   height:auto;
   padding:30px;
+}
+
+a.button,a.button:hover{
+  text-decoration: none;
 }
 
 ul{
