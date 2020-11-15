@@ -364,6 +364,8 @@ section:nth-child(3){
   grid-row-start: 1;
   grid-row-end: 2;
   
+  text-decoration: none;
+  list-style: none;
   width:auto;
   height:auto;
   padding:30px;
